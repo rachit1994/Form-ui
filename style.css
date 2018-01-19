@@ -1,0 +1,53 @@
+html, body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #212121;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div.container {
+  margin: auto;
+  width: 1000px;
+}
+
+div.formContainer {
+  width: 1000px;
+  height: 700px;
+  background: #FAFAFA;
+}
+
+nav.sidebar {
+  width: 20%;
+  background: #81D4FA;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav.sidebar ul {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav.sidebar ul li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+nav.sidebar ul li i {
+  color: #ECEFF1;
+  font-size: 40px;
+}
+
+nav.sidebar ul li i:hover {
+  color: #fff;
+}
