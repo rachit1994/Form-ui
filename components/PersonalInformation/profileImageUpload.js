@@ -15,6 +15,6 @@ $(".file-upload").on('change', function() {
     readURL(this);
 });
 
-// $(".upload-button").on('click', function() {
-//     $(".file-upload").click();
-// });
+$('div.nextButton').on('click', function() {
+    $('nav.sidebar ul li:nth-child(2)').click();
+});

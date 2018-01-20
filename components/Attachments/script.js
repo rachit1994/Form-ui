@@ -3,14 +3,12 @@ var readURL = function(input) {
         var reader = new FileReader();
 
         reader.onload = function(e) {
-            console.log('e name', e);
             var img_index = 1;
             var img = $('<img />').attr({
                 'id': 'myImage' + img_index,
                 'src': e.target.result,
             }).appendTo('.gallery');
             img_index++;
-            // $('.profile-pic').attr('src', e.target.result);
         }
 
         reader.readAsDataURL(input.files[0]);
@@ -20,4 +18,8 @@ var readURL = function(input) {
 
 $(".file-upload").on('change', function() {
     readURL(this);
+});
+
+$('div.nextButton').on('click', function() {
+  $('nav.sidebar ul li:nth-child(4)').click();
 });
