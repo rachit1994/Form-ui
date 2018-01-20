@@ -1,0 +1,11 @@
+div.profilePicUpload {
+  width: 100%;
+  text-align: center;
+}
+
+img.profile-pic {
+  height: 120px;
+  width: 120px;
+  border: solid 2px #eee;
+  border-radius: 50%;
+}
