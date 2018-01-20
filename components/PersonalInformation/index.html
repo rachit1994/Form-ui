@@ -1,9 +1,26 @@
 <link rel="stylesheet" type="text/css" href="components/PersonalInformation/style.css">
-<div class="profilePicUpload">
-  <img class="profile-pic" src="http://userproplugin.com/userpro/wp-content/uploads/userpro/15531/587672f9c6375.png" />
-  <div class="uploadButton">
-    <input class="file-upload" type="file" accept="image/*" />
-  </div>
+<div class="card">
+    <div class="profilePicUpload">
+        <img class="profile-pic" src="http://userproplugin.com/userpro/wp-content/uploads/userpro/15531/587672f9c6375.png" />
+        <div class="uploadButton">
+            <input class="file-upload" type="file" accept="image/*" />
+        </div>
+    </div>
+    <div>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email id..">
+            <label for="country">Note</label>
+            <textarea id="note" placeholder="Any note?" />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="nextButton">
+        <button>&#8594;</button>
+    </div>
 </div>
-
 <script type="text/javascript" src="components/PersonalInformation/profileImageUpload.js"></script>

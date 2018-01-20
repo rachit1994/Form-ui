@@ -28,10 +28,12 @@ div.formContainer {
     background: #03A9F4;
 }
 
+
+
 /* Sidebar */
 
 nav.sidebar {
-    width: 20%;
+    width: 85px;
     background: #81D4FA;
     height: 100%;
     display: inline-flex;
@@ -79,14 +81,84 @@ nav.sidebar ul li span p {
 }
 
 
+
+
 /* Cards*/
 
 div.cards {
-    display: inline-block;
+    display: flex;
     position: relative;
-    width: 80%;
+    width: calc(100% - 85px);
     flex: 1;
     text-align: center;
     margin-top: 25px;
     height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card {
+    display: block;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: #fff;
+    border-radius: 6px;
+}
+
+div form {
+    height: inherit;
+    display: block;
+    width: 404px;
+    margin: 0 100px;
+}
+
+form.formPadding {
+    padding-top: 40px;
+}
+
+div form * {
+    flex: 1;
+}
+
+div.nextButton button {
+    border: solid 1px #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    color: #fff;
+    position: relative;
+    bottom: -32px;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+div.nextButton button:hover {
+    background-position: right center;
+}
+
+/*form css*/
+
+input:not([type=submit]), select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }

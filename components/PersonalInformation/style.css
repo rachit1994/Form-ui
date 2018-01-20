@@ -1,11 +1,19 @@
 div.profilePicUpload {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -58px;
 }
 
 img.profile-pic {
-  height: 120px;
-  width: 120px;
-  border: solid 2px #eee;
-  border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    border: solid 2px #eee;
+    border-radius: 50%;
+}
+
+textarea {
+  max-height: 75px;
+  max-width: 405px;
+  min-width: 405px;
 }
