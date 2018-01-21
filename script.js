@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log('here');
     $('nav.sidebar').load('./components/sidebar.html', function() {
       $('nav.sidebar ul li').on('click', function() {
         $('nav.sidebar ul li').removeClass('active');

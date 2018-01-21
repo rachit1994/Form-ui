@@ -17,7 +17,6 @@ div.setPositionRight button {
 
 div.setPositionLeft button {
     position: absolute;
-    top: 40%;
     left: -30px;
 }
 
